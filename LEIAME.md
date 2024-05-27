@@ -48,6 +48,7 @@ Obs: As classes dos outros pacotes herdarão das classes dos arquivos correspond
 5. Criar um pacote para cada entidade no MER, com os arquivos `__init__.py`, `schemas.py` e `models.py`:
 - pacote athlete com as classes `Athlete` e `AthleteModel`
 - pacote category com as classes `Category` e `CategoryModel`
+- pacote training_center com as classes `TrainingCenter` e `TrainingCenterModel`
 
 
 ## Referências

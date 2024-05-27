@@ -15,5 +15,5 @@ class AthleteModel(BaseModel):
     height: Mapped[float] = mapped_column(Float, nullable=False)
     genre: Mapped[str] = mapped_column(String(1), nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
-    category: Mapped['CategoryModel'] = relationship(back_populates='athlete')
+    category: Mapped['CategoryModel'] = relationship(back_populates='athletes')
     category_id: Mapped[int] = mapped_column(ForeignKey('category.pk_id'))
