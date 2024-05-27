@@ -45,6 +45,9 @@ class BaseModel(DeclarativeBase):
 
 Note: The classes in other packages will inherit from the classes in the corresponding files in the contrib package.
 
+5. Create a package for each entity in MER, with the files `__init__.py`, `schemas.py` and `models.py`:
+- athlete package with classes `Athlete` and `AthleteModel`
+
 
 ## References
 DIO - Desenvolvendo sua Primeira API com FastAPI, Python e Docker:

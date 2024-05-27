@@ -45,6 +45,9 @@ class BaseModel(DeclarativeBase):
 
 Obs: As classes dos outros pacotes herdarão das classes dos arquivos correspondentes do pacote contrib.
 
+5. Criar um pacote para cada entidade no MER, com os arquivos `__init__.py`, `schemas.py` e `models.py`:
+- pacote athlete com as classes `Athlete` e `AthleteModel`
+
 
 ## Referências
 DIO - Desenvolvendo sua Primeira API com FastAPI, Python e Docker:
