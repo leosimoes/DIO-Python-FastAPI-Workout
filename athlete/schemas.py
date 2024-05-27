@@ -2,7 +2,7 @@ from typing import Annotated
 from pydantic import BaseModel, Field, PositiveInt, PositiveFloat
 from contrib.schemas import BaseSchema
 from category.schemas import Category
-
+from training_center.schemas import TrainingCenter
 
 class Athlete(BaseSchema):
     name: Annotated[str, Field(description="athlete's name", examples=['Leo'], max_length=50)]
@@ -12,3 +12,4 @@ class Athlete(BaseSchema):
     height: Annotated[PositiveFloat, Field(description="athlete's height", examples=[1.70])]
     genre: Annotated[str, Field(description="athlete's genre", examples=['M', 'F'], max_length=1)]
     category: Annotated[Category, Field(description="athlete's category")]
+    training_center: Annotated[TrainingCenter, Field(description="athlete's training center")]

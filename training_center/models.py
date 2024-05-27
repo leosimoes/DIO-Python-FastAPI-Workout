@@ -10,4 +10,4 @@ class TrainingCenterModel(BaseModel):
     name: Mapped[str] = mapped_column(String(10), unique=True, nullable=False)
     address: Mapped[str] = mapped_column(String(60), nullable=False)
     owner: Mapped[str] = mapped_column(String(30), nullable=False)
-    athlete: Mapped['AthleteModel'] = relationship(back_populates='training_centers')
+    athlete: Mapped['AthleteModel'] = relationship(back_populates='training_center')
