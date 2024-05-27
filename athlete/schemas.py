@@ -1,6 +1,7 @@
 from typing import Annotated
 from pydantic import BaseModel, Field, PositiveInt, PositiveFloat
 from contrib.schemas import BaseSchema
+from category.schemas import Category
 
 
 class Athlete(BaseSchema):
@@ -10,3 +11,4 @@ class Athlete(BaseSchema):
     weight: Annotated[PositiveFloat, Field(description="athlete's weight", examples=[75.5])]
     height: Annotated[PositiveFloat, Field(description="athlete's height", examples=[1.70])]
     genre: Annotated[str, Field(description="athlete's genre", examples=['M', 'F'], max_length=1)]
+    category: Annotated[Category, Field(description="athlete's category")]

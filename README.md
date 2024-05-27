@@ -47,6 +47,7 @@ Note: The classes in other packages will inherit from the classes in the corresp
 
 5. Create a package for each entity in MER, with the files `__init__.py`, `schemas.py` and `models.py`:
 - athlete package with classes `Athlete` and `AthleteModel`
+- category package with classes `Category` and `CategoryModel`
 
 
 ## References
