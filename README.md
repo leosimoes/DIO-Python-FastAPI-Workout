@@ -52,6 +52,8 @@ Note: The classes in other packages will inherit from the classes in the corresp
 
 6. Run the `alembic init` command.
 
+7. Create the `docker-compose.yml` file.
+
 
 ## References
 DIO - Desenvolvendo sua Primeira API com FastAPI, Python e Docker:
