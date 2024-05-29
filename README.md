@@ -15,7 +15,7 @@ The project development steps were:
 
 ![Image-03-Hello](Images/Image-03-Hello.png)
 
-3. Check if the dependencies `fastapi`, `uvicorn`, `sqlalchemy` and `pydantic` are in `requirements.txt`.
+3. Check if the dependencies `fastapi`, `uvicorn`, `sqlalchemy`, `pydantic`, `alembic` and `asyncpg` are in `requirements.txt`.
 
 4. Create `contrib` package with the files:
 - `__init__.py`;
@@ -50,10 +50,13 @@ Note: The classes in other packages will inherit from the classes in the corresp
 - category package with classes `Category` and `CategoryModel`
 - training_center package with classes `TrainingCenter` and `TrainingCenterModel`
 
+6. Run the `alembic init` command.
+
 
 ## References
 DIO - Desenvolvendo sua Primeira API com FastAPI, Python e Docker:
 https://web.dio.me/lab/desenvolvendo-uma-api-assincrona-com-fastapi/learning/4058b4b5-1716-43fb-9bf6-121139c16227
+| https://github.com/digitalinnovationone/workout_api/tree/main/workout_api
 
 FastAPI - Documentation:
 https://fastapi.tiangolo.com/
